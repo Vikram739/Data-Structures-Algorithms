@@ -5,17 +5,22 @@
 #include <bits/stdc++.h>
 #define print(x) cout<<x<<;
 using namespace std;
-int fun(int n)
+
+// Tree Recursion example...
+// O/P: 3 2 1 1 2 1 1
+void fun(int n)
 {
     if(n>0)
     {
-        return fun(n-1)+n;
+        cout<<n<<" ";
+        fun(n-1);
+        fun(n-1);
     }
+    
 }
 int main()
 {
-    int x = 5;
-    int result = fun(x);
-    cout<<result;
+    int x = 3;
+    fun(x);
     return 0;
 }

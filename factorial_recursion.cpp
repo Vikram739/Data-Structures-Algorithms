@@ -5,17 +5,18 @@
 #include <bits/stdc++.h>
 #define print(x) cout<<x<<;
 using namespace std;
-int fun(int n)
+
+int fact(int n)
 {
-    if(n>0)
+    if(n == 0 || n == 1)
     {
-        return fun(n-1)+n;
+        return 1;
     }
+    return fact(n-1)*n;
 }
 int main()
 {
     int x = 5;
-    int result = fun(x);
-    cout<<result;
+    cout<<"Factorial: "<<fact(x);
     return 0;
 }

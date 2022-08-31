@@ -5,17 +5,14 @@
 #include <bits/stdc++.h>
 #define print(x) cout<<x<<;
 using namespace std;
-int fun(int n)
-{
-    if(n>0)
-    {
-        return fun(n-1)+n;
-    }
+
+int sum(int n)
+{   
+    return n*(n+1)/2;
 }
 int main()
 {
-    int x = 5;
-    int result = fun(x);
-    cout<<result;
+    int x = 100;
+    cout<<"Sum: "<<sum(x);
     return 0;
 }
