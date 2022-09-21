@@ -16,7 +16,8 @@ int main()
 
     // Dynamic Array...
     int *p;
-    p =(int *) malloc(5*sizeof(int));
+    // p =(int *) malloc(5*sizeof(int));    //It's in c lang...
+    p = new int(5);
     p[0] = 1;
     p[1] = 3;
     p[2] = 5;
