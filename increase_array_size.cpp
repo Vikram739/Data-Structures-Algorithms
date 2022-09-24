@@ -24,7 +24,8 @@ int main()
         q[i] = p[i];
     }
         
-    free(p);
+    // free(p);
+    delete p;   // operator that deallocates memory created by new operator...
     p=q;
     q=NULL;   
     for(i=0;i<5;i++)
