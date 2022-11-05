@@ -5,71 +5,41 @@
 #include <bits/stdc++.h>
 #define print(x) cout<<x<<;
 using namespace std;
-
-// How to create 2D array...
+struct Array
+{
+ int A[10];
+ int size;
+ int length;
+}; 
+ void Display(struct Array arr)
+ {
+ int i;
+ printf("\nElements are\n");
+ for(i=0;i<arr.length;i++)
+ printf("%d ",arr.A[i]);
+ }
+ void Append(struct Array *arr,int x)
+ {
+ if(arr->length<arr->size)
+ arr->A[arr->length++]=x;
+ }
+ void Insert(struct Array *arr,int index,int x)
+ {
+ int i;
+ 
+ if(index>=0 && index <=arr->length)
+ {
+ for(i=arr->length;i>index;i--)
+ arr->A[i]=arr->A[i-1];
+ arr->A[index]=x;
+ arr->length++;
+ }
+ } 
 int main()
 {
-    // first way...
-    int a[3][4] = {
-        {1,2,3,4},
-        {4,5,6,7},
-        {8,9,19,4}
-    };
-    cout<<a[2][3]<<"\n";   //Print 4
-
-
-
-// second way...
-    int *b[3];
-    // b[0] = (int *)malloc(4*sizeof(int));
-
-    b[0] = new int(4);
-    b[1] = new int(4);
-    b[2] = new int(4);
-
-     for(int i=0;i<3;i++)
-     {
-        for(int j=0;j<4;j++)
-        {
-            b[i][j] = (i+j) + 1;
-        }
-     }
-    cout<<"Array B is:\n ";
-    for(int i=0;i<3;i++)
-     {
-        for(int j=0;j<4;j++)
-        {
-            cout<<b[i][j]<<" ";
-        }
-        cout<<endl;
-     }
-
-
-    //  third way...
-    int **c     //double pointer...
-
-    // c = (int **)malloc(3*sizeof(int));
-    c = new int*[3]
-    c[0] = new int[4];
-    c[1] = new int[4];
-    c[2] = new int[4];
-    for(int i=0;i<3;i++)
-     {
-        for(int j=0;j<4;j++)
-        {
-            c[i][j] = (i+j) + 2;
-        }
-     }
-
-     cout<<"Array C is:\n ";
-    for(int i=0;i<3;i++)
-     {
-        for(int j=0;j<4;j++)
-        {
-            cout<<c[i][j]<<" ";
-        }
-        cout<<endl;
-     }
-
-    return 0;
+struct Array arr1={{2,3,4,5,6},10,5};
+Append(&arr1,10);
+Insert(&arr1,0,12);
+Display(arr1);
+ return 0;
 }
