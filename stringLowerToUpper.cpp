@@ -8,13 +8,13 @@ using namespace std;
 
 int main()
 {
-    char str[] = "VIKRAM";
+    char str[] = "vikram";
     int i=0;
     while(str[i] != '\0')
     {
-        str[i] += 32;   //adding 32 for coverting a string from uppercase to lowercase...
+        str[i] -= 32;   //subtracting 32 for coverting a string from lowercase to uppercase...
         i++;          
     }
-    cout<<"Lowercase: "<<str;
+    cout<<"Uppercase: "<<str;
     return 0;
 }
