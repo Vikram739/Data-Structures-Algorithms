@@ -8,7 +8,7 @@ using namespace std;
 // 	int weight;
 // };
 
-int knapsack_01(int profit[], int weight[], int n, int W)
+int knapsack(int profit[], int weight[], int n, int W)
 {
 
     int k[n + 1][W + 1];
@@ -55,7 +55,7 @@ int main()
     int W = 6;
     int n = sizeof(profit) / sizeof(profit[0]);
 
-    cout << knapsack_01(profit, weight, n, W);
+    cout << knapsack(profit, weight, n, W);
 
     return 0;
 }
