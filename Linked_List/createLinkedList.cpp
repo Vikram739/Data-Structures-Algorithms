@@ -56,7 +56,14 @@ void displayRecursive(struct Node *p)
     }
 }
 
-
+void displayRecursiveReverse(struct Node *p)
+{
+    if(p != NULL)
+    {
+        displayRecursiveReverse(p->next);
+        cout<<p->data<<" ";
+    }
+}
 
 int main()
 {
@@ -66,6 +73,8 @@ int main()
     displayList(first);
     cout<<"\nLinked List using Recursion: ";
     displayRecursive(first);
+    cout<<"\nLinked List Reverse using Recursion: ";
+    displayRecursiveReverse(first);
 
     return 0;
 }
