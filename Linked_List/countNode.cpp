@@ -41,11 +41,36 @@ void displayList(struct Node *p)
         p = p->next;
     }
 }
+
+int countNode(struct Node *p)
+{
+    int cnt=0;
+    while(p != NULL)
+    {
+        cnt++;
+        p = p->next;
+    }
+    return cnt;
+}
+
+// counting in recursive way...
+int countNodeRecursive(struct Node *p)
+{
+    if(p != NULL)
+    {
+        return countNodeRecursive(p->next) + 1;
+    }
+    return 0;
+}
+
 int main()
 {
     int A[] = {10,20,30,40,50};
 
     createNode(A,5);
+    cout<<"Number of Nodes: "<<countNode(first)<<endl;
+    cout<<"Number of Nodes using recursion: "<<countNodeRecursive(first)<<endl;
     displayList(first);
+
     return 0;
 }
