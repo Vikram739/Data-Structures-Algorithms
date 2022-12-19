@@ -46,12 +46,26 @@ void displayList(struct Node *p)
     }
 }
 
+void displayRecursive(struct Node *p)
+{
+    
+    if(p != NULL)
+    {
+        cout<<p->data<<" ";
+        displayRecursive(p->next);
+    }
+}
+
+
+
 int main()
 {
-    int A[] = {3,5,7,11,15};
+    int A[] = {3,5,7,11,15}; 
 
     createList(A,5);
     displayList(first);
+    cout<<"\nLinked List using Recursion: ";
+    displayRecursive(first);
 
     return 0;
 }
