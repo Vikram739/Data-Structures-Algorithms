@@ -16,7 +16,8 @@ void createNode(int A[],int n)
 {
     struct Node *t,*last;
 
-    first = (struct Node *)malloc(sizeof(struct Node));
+    // first = (struct Node *)malloc(sizeof(struct Node));
+    first = new Node;
     first->data = A[0];
     first->next = NULL;
     last = first;
@@ -24,7 +25,8 @@ void createNode(int A[],int n)
     // for multiple nodes...
     for(int i=1;i<n;i++)
     {
-        t = (struct Node *)malloc(sizeof(struct Node));
+        // t = (struct Node *)malloc(sizeof(struct Node));
+        t = new Node;
         t->data = A[i];
         t->next = NULL;
         last->next = t;
