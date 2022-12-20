@@ -61,8 +61,15 @@ int maxNodeRecursion(struct Node *p)
     int x = 0;
     if(p != NULL);
     {
-        x = maxNodeRecursion(p->next);
-        return (x>p->data ? x : p->data);
+        int x = maxNodeRecursion(p->next);
+        if(x > p->data)
+        {
+            return x;
+        }
+        else
+        {
+            return p->data;
+        }
     }
     return INT_MIN;
 }
