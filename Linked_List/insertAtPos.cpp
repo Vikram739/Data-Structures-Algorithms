@@ -43,23 +43,18 @@ void displayList(struct Node *p)
     }
 }
 
-void insertAtBegining(int x)
+void insertAtPos(struct Node *p, int pos, int x)
 {
     struct Node *t;
-    // t = (struct Node*)malloc(sizeof(struct Node));
-    t = new Node;
-    t->data = x;
-    t->next = first;
-    first = t;
+    
 }
-
 int main()
 {
     int A[] = {10,20,30,60,40,50};
     createNode(A,6);
-
+    
     displayList(first);
-    insertAtBegining(5);
+    insertAtPos(4,50);
     displayList(first);
 
     return 0;
