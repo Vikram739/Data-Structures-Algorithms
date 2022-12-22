@@ -35,7 +35,7 @@ void createNode(int A[],int n)
 
 void displayList(struct Node *p)
 {
-    cout<<"Linked List: ";
+    cout<<"\nLinked List: ";
     while(p != NULL)
     {
         cout<<p->data<<" ";
@@ -43,14 +43,23 @@ void displayList(struct Node *p)
     }
 }
 
+void insertAtBegining(int x)
+{
+    struct Node *t;
+    t = (struct Node*)malloc(sizeof(struct Node));
+    t->data = x;
+    t->next = first;
+    first = t;
+}
+
 int main()
 {
     int A[] = {10,20,30,60,40,50};
     createNode(A,6);
+    
+    displayList(first);
+    insertAtBegining(5);
     displayList(first);
 
-    
-    
-    
     return 0;
 }
