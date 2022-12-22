@@ -16,16 +16,16 @@ struct Node
 void createNode(int A[],int n)
 {
     struct Node *t,*last;
-    // first = (struct Node *)malloc(sizeof(struct Node));
-    first = new Node;
+    first = (struct Node *)malloc(sizeof(struct Node));
+    // first = new Node;
     first->data = A[0];
     first->next = NULL;
     last = first;
     
     for(int i=1;i<n;i++)
     {
-        // t = (struct Node *)malloc(sizeof(struct Node));
-        t = new Node;
+        t = (struct Node *)malloc(sizeof(struct Node));
+        // t = new Node;
         t->data = A[i];
         t->next = NULL;
         last->next = t;
@@ -59,9 +59,9 @@ int maxNode(struct Node *p)
 int maxNodeRecursion(struct Node *p)
 {
     int x = 0;
-    if(p != NULL);
+    if(p);
     {
-        int x = maxNodeRecursion(p->next);
+        x = maxNodeRecursion(p->next);
         if(x > p->data)
         {
             return x;
@@ -69,7 +69,7 @@ int maxNodeRecursion(struct Node *p)
         else
         {
             return p->data;
-        }
+        }   
     }
     return INT_MIN;
 }
