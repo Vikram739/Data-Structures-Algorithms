@@ -1,0 +1,66 @@
+/*
+    Created By : Vikram Markali
+*/
+
+#include <bits/stdc++.h>
+#define print(x) cout<<x<<;
+using namespace std;
+
+struct Node
+{
+    int data;
+    struct Node *next;
+}*first;
+
+
+void createNode(int A[],int n)
+{
+    struct Node *t,*last;
+    // first = (struct Node *)malloc(sizeof(struct Node));
+    first = new Node;
+    first->data = A[0];
+    first->next = NULL;
+    last = first;
+    
+    for(int i=1;i<n;i++)
+    {
+        // t = (struct Node *)malloc(sizeof(struct Node));
+        t = new Node;
+        t->data = A[i];
+        t->next = NULL;
+        last->next = t;
+        last = t;
+    }
+}
+
+void displayList(struct Node *p)
+{
+    while(p != NULL)
+    {
+        printf("%d ",p->data);
+        p = p->next;
+    }
+}
+
+void searchNode(struct Node *p, int key)
+{
+    while(p != NULL)
+    {
+        if(key == p->data)
+        {
+            cout<<"\nKey is found!!";
+            return;
+        }
+        p= p->next;
+    }
+    cout<<"\nNot found!!";
+}
+int main()
+{
+    int A[] = {10,20,30,60,40,50};
+    createNode(A,6);
+    displayList(first);
+
+    searchNode(first,60);
+    return 0;
+}
