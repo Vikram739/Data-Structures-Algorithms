@@ -37,23 +37,24 @@ void displayList(struct Node *p)
 {
     while(p != NULL)
     {
-        printf("%d ",p->data);
+        cout<<p->data<<" ";
         p = p->next;
     }
 }
 
-void searchNode(struct Node *p, int key)
+Node* searchNode(struct Node *p, int key)
 {
     while(p != NULL)
     {
         if(key == p->data)
         {
-            cout<<"\nKey is found!!";
-            return;
+            // cout<<"\nKey is found!!";
+            return p;
         }
         p= p->next;
     }
-    cout<<"\nNot found!!";
+    // cout<<"\nNot found!!";
+    return NULL;
 }
 int main()
 {
@@ -61,6 +62,6 @@ int main()
     createNode(A,6);
     displayList(first);
 
-    searchNode(first,60);
+    cout<<"\nNode :"<<searchNode(first,60);
     return 0;
 }
