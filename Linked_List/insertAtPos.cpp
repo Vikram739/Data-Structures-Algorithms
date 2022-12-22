@@ -46,7 +46,16 @@ void displayList(struct Node *p)
 void insertAtPos(struct Node *p, int pos, int x)
 {
     struct Node *t;
-    
+    // t = (struct Node *)malloc(sizeof(struct Node));
+    t = new Node;
+    t->data = x;
+    for(int i=0;i<pos-1 ;i++)
+    {
+        p = p->next;
+    }
+    t->next = p->next;
+    p->next = t;
+    cout<<"\n Node sucessfully inserted after: "<<pos;
 }
 int main()
 {
@@ -54,7 +63,7 @@ int main()
     createNode(A,6);
     
     displayList(first);
-    insertAtPos(4,50);
+    insertAtPos(first,4,100);
     displayList(first);
 
     return 0;
