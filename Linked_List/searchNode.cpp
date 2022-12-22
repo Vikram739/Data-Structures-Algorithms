@@ -56,12 +56,30 @@ Node* searchNode(struct Node *p, int key)
     // cout<<"\nNot found!!";
     return NULL;
 }
+
+Node* searchNodeR(Node *p,int key)
+{
+    if(p == NULL)
+    {
+        return NULL;
+    }
+
+    if(key == p->data)
+    {
+        return p;
+    }
+    else
+    {
+        return searchNodeR(p->next, key);
+    }
+}
 int main()
 {
     int A[] = {10,20,30,60,40,50};
     createNode(A,6);
     displayList(first);
 
-    cout<<"\nNode :"<<searchNode(first,60);
+    cout<<"\nNode using Loop :"<<searchNode(first,60);
+    cout<<"\nNode using Recursion :"<<searchNodeR(first,60);
     return 0;
 }
