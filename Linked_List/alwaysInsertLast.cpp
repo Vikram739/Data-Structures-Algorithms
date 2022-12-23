@@ -46,8 +46,6 @@ int main()
     insertLast(30);
     insertLast(20);
     displayList(first);
-    
-    insertLast(50);
-    displayList(first);
+
     return 0;
 }
