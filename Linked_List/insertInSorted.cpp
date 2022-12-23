@@ -38,11 +38,44 @@ void createList(int A[] , int n)
 
 void displayList(struct Node *p)
 {
-    cout<<"Linked List: ";
+    cout<<"\nLinked List: ";
     while(p != NULL)
     {
         cout<<p->data<<" ";
         p = p->next;
+    }
+}
+
+void insertInSorted(struct Node *p,int x)
+{
+    struct Node *t,*q=NULL;
+
+    // t = (struct Node*)malloc(sizeof(Node));
+    t = new Node;
+    t->data = x;
+    t->next = NULL;
+
+    if(first == NULL)
+    {
+        first = t;
+    }
+    else
+    {
+        while(p != NULL && p->data < x)
+        {
+            q = p;
+            p = p->next;
+        }
+        if(p == first)
+        {
+            t->next = first;
+            first = t;
+        }
+        else
+        {
+            t->next = q->next;
+            q->next = t;
+        }
     }
 }
 
@@ -53,6 +86,8 @@ int main()
     createList(A,5);
     displayList(first);
 
-    // insertInSorted(first,35);
+    insertInSorted(first,35);
+    insertInSorted(first,5);
+    displayList(first);
     return 0;
 }
