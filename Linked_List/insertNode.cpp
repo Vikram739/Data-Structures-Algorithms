@@ -57,17 +57,17 @@ int countNodes(struct Node *p)
 
 void insertNode(struct Node *p, int pos, int x)
 {
-    struct Node *t;
-
-    t=(struct Node*) malloc(sizeof(struct Node));
-    t->data = x;
-
     // checking for valid position...
     if(pos < 0 || pos > countNodes(p))
     {
         cout<<"\nInvalid index, Node not inserted...";
         return;
     }
+
+    struct Node *t;
+    t = (struct Node*) malloc(sizeof(struct Node));
+    t->data = x;
+
     if(pos == 0)
     {
         t->next = first;
