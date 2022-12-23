@@ -15,7 +15,8 @@ struct Node
 void insertLast(int x)
 {
    struct Node *t;
-   t =(struct Node*) malloc(sizeof(Node));
+//    t =(struct Node*) malloc(sizeof(Node));
+   t = new Node;
    t->data = x;
    t->next = NULL;
 
