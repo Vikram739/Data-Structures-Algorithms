@@ -41,15 +41,57 @@ void displayList(struct Node *p)
     }
 }
 
-int deleteNode(int pos)
+int countNode(struct Node *p)
 {
-    struct Node
+    int cnt=0;
+    while(p != NULL)
+    {
+        cnt++;
+        p = p->next;
+    }
+    return cnt;
 }
+
+int deleteNode(struct Node *p,int pos)
+{
+    struct Node *q=NULL;
+    int x = -1;
+
+    if(pos < 0 || pos > countNode(p));
+    {
+        return x;
+    }
+    if(pos == 1)
+    {
+        q = first;
+        x = first->data;
+        first = first->next;
+        free(q);
+        return x;
+    }
+    else
+    {
+        for(int i=0;i<pos-1 && p ;i++)
+        {
+            q = p;
+            p = p->next;
+        }
+        q->next = p->next;
+        x = p->data;
+        free(p);
+        return x;
+    }
+}
+
 int main()
 {
     int A[] = {10,20,30,40,50};
 
     createList(A,5);
+    displayList(first);
+    cout<<"\nNode deleted: "<<deleteNode(first,1);
+    displayList(first);
+    cout<<"\nNode deleted: "<<deleteNode(first,4);
     displayList(first);
     return 0;
 }
