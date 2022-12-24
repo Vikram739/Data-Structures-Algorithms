@@ -16,7 +16,7 @@ void createList(int A[],int n)
 {
     struct Node *t,*last;
     // first = (struct Node*)malloc(sizeof(Node));
-    t = new Node;
+    first = new Node;
     first->data = A[0];
     first->next = NULL;
     last = first;
@@ -59,7 +59,7 @@ int deleteNode(struct Node *p,int pos)
     struct Node *q=NULL;
     int x = -1;
 
-    if(pos < 0 || pos > countNode(p));
+    if(pos < 0 || pos > countNode(p))
     {
         return x;
     }
@@ -93,7 +93,7 @@ int main()
     displayList(first);
     cout<<"\nNode deleted: "<<deleteNode(first,1);
     displayList(first);
-    cout<<"\nNode deleted: "<<deleteNode(first,1);
+    cout<<"\nNode deleted: "<<deleteNode(first,4);
     displayList(first);
     return 0;
 }
