@@ -15,14 +15,16 @@ struct Node
 void createList(int A[],int n)
 {
     struct Node *t,*last;
-    first = (struct Node*)malloc(sizeof(Node));
+    // first = (struct Node*)malloc(sizeof(Node));
+    t = new Node;
     first->data = A[0];
     first->next = NULL;
     last = first;
 
     for(int i=1;i<n;i++)
     {
-        t =(struct Node*) malloc(sizeof(Node));
+        // t =(struct Node*) malloc(sizeof(Node));
+        t = new Node;
         t->data = A[i];
         t->next = NULL;
         last->next = t;
@@ -91,7 +93,7 @@ int main()
     displayList(first);
     cout<<"\nNode deleted: "<<deleteNode(first,1);
     displayList(first);
-    cout<<"\nNode deleted: "<<deleteNode(first,4);
+    cout<<"\nNode deleted: "<<deleteNode(first,1);
     displayList(first);
     return 0;
 }
