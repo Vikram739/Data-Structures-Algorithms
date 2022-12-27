@@ -43,17 +43,36 @@ void displayList(struct Node *p)
     }
 }
 
+// It removes the duplicates from sorted linked list...
+void removeDuplicates(struct Node* p)
+{
+    struct Node *q = p->next;
+    while(q)
+    {
+        if(p->data == q->data)
+        {
+            p->next = q->next;
+            free(q);
+            q = p->next;
+        }
+        else
+        {
+            p = q;
 
+        }
+            q = q->next;
+    }
+}
 
 int main()
 {
-    int A[] = {10,20,30,40,50};
+    int A[] = {10,20,20,30,40,40,50};
 
-    createList(A,5);
+    createList(A,7);
     displayList(first);
 
-    
-    
+    removeDuplicates(first);
+    displayList(first);
 
     return 0;
 }
