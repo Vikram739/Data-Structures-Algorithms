@@ -31,7 +31,7 @@ void createList(int A[],int n)
         last = t;
 
     }
-    last->next = first;
+    // last->next = first;
 }
 
 void displayList(struct Node *p)
@@ -42,16 +42,30 @@ void displayList(struct Node *p)
     {
         cout<<p->data<<" ";
         p = p->next;
-        q = q->next->next;
-        if(p == q)
-        {
-            break;
-        }
+        // q = q->next->next;
+        // if(p == q)
+        // {
+        //     break;
+        // }
         
     }
 }
 
-
+// check loop present in linked  list or not...
+bool checkLoop(struct Node *p)
+{
+    struct Node *q = p;
+    while(p && p->next)
+    {
+        p = p->next->next;
+        q = q->next;
+        if(p == q)
+        {
+            return true;
+        }
+    }
+    return false;
+}
 
 
 int main()
@@ -60,6 +74,7 @@ int main()
 
     createList(A,5);
     displayList(first);
+    cout<<"\nIs Loop Present: "<<checkLoop(first);
 
     
     return 0;
