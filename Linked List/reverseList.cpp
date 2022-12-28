@@ -67,7 +67,6 @@ int main()
 
     reverseList(first);
     displayList(first);
-    cout<<sizeof(double*);
 
     return 0;
 }
