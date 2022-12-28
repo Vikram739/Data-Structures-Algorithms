@@ -12,7 +12,7 @@ struct Node
     struct Node *next;
 }*first;
 
-void createList(int A[],int n)
+struct Node* createList(int A[],int n)
 {
     struct Node *t,*last;
     // first = (struct Node*)malloc(sizeof(Node));
@@ -31,6 +31,7 @@ void createList(int A[],int n)
         last = t;
 
     }
+    return first;
 }
 
 void displayList(struct Node *p)
@@ -44,16 +45,22 @@ void displayList(struct Node *p)
 }
 
 // reverse a linked list using recursion...
-void reverseListR(struct Node *q, struct Node *p)
+void concatLists(struct Node *first,struct Node *second)
 {
-    if(p != NULL)
+    struct Node *p = first;
+    if(first->next)
     {
-        reverseListR(p,p->next);
-        p->next = q;
+        while(p->next != NULL)
+        {
+            p = p->next;
+        }
+        p->next = second;
+        second = NULL;
     }
     else
     {
-        first = q;
+        first->next = second;
+        second = NULL;
     }
 }
 
@@ -61,12 +68,18 @@ void reverseListR(struct Node *q, struct Node *p)
 int main()
 {
     int A[] = {10,20,30,40,50};
+    int B[] = {60,70,80};
 
-    createList(A,5);
+    struct Node *first = createList(A,5);
+    struct Node *second = createList(B,3);
+    displayList(first);
+    displayList(second);
+
+    concatLists(first,second);
     displayList(first);
 
-    reverseListR(NULL,first);
-    displayList(first);
+
+    
 
     return 0;
 }
