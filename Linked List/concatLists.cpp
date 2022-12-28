@@ -44,7 +44,7 @@ void displayList(struct Node *p)
     }
 }
 
-// reverse a linked list using recursion...
+// concat two linked lists using extra pointer...
 void concatLists(struct Node *first,struct Node *second)
 {
     struct Node *p = first;
