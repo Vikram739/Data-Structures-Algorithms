@@ -46,7 +46,15 @@ void displayList(struct Node *p)
 // reverse a linked list using sliding pointers...
 void reverseList(struct Node *p)
 {
-    
+    struct Node *q = NULL,*r = NULL;
+    while(p)
+    {
+        r = q;
+        q = p;
+        p = p->next;
+        q->next = r;
+    }
+    first = q;
 }
 
 
@@ -58,6 +66,7 @@ int main()
     displayList(first);
 
     reverseList(first);
+    displayList(first);
 
     return 0;
 }
