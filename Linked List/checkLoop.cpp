@@ -31,7 +31,7 @@ void createList(int A[],int n)
         last = t;
 
     }
-    // last->next = first;
+    last->next = first;
 }
 
 void displayList(struct Node *p)
@@ -42,11 +42,11 @@ void displayList(struct Node *p)
     {
         cout<<p->data<<" ";
         p = p->next;
-        // q = q->next->next;
-        // if(p == q)
-        // {
-        //     break;
-        // }
+        q = q->next->next;
+        if(p == q)
+        {
+            break;
+        }
         
     }
 }
