@@ -35,10 +35,37 @@ void createList(int A[],int n)
     last->next = first;
 }
 
+void displayCircular(struct Node *head)
+{
+    struct Node *p = head;
+    cout<<"\nCircular Linked List: ";
+    do
+    {
+        cout<<p->data<<" ";
+        p = p->next;
+
+    }while(p != head);
+}
+
+void displayCircularRecursive(struct Node *head)
+{
+    struct Node *p = head;
+    static int flg = 0;
+    
+    while(p != head || flg == 0)
+    {
+        flg = 1;
+        cout<<p->data<<" ";
+        displayCircularRecursive(p->next);
+    }
+}
 int main()
 {
     int A[] = {10,20,30,40,50};
 
     createList(A,5);
+    displayCircular(first);
+    cout<<"\nRecursive Circular Linked List: ";
+    displayCircularRecursive(first);
     return 0;
 }
