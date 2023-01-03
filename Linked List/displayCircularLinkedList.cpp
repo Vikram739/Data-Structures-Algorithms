@@ -19,7 +19,7 @@ void createList(int A[],int n)
     // first = (struct Node*)malloc(sizeof(Node));
     first = new Node;
     first->data = A[0];
-    first->next = NULL;
+    first->next = first;
     last = first;
 
     for(int i=1;i<n;i++)
@@ -27,7 +27,7 @@ void createList(int A[],int n)
         // t =(struct Node*) malloc(sizeof(Node));
         t = new Node;
         t->data = A[i];
-        t->next = NULL;
+        t->next = last->next;
         last->next = t;
         last = t;
 
