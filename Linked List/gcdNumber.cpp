@@ -8,7 +8,7 @@ using namespace std;
 
 int main()
 {
-    int a = 50;
+    int a = 10;
     int b = 20;
     cout<<__gcd(a,b);
     return 0;
