@@ -8,7 +8,8 @@ using namespace std;
 
 int main()
 {
-    set <int> s;
+    // It stores multiple values(duplicates)...and returns in acending order(internally implements min heap)...
+    multiset <int> s;
     s.insert(10);
     s.insert(20);
     s.insert(10);
