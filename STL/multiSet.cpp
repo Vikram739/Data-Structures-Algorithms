@@ -8,16 +8,16 @@ using namespace std;
 
 int main()
 {
-    // multiset <int> s;
-    // s.insert(10);
-    // s.insert(20);
-    // s.insert(10);
-    // s.insert(20);
-    // s.insert(50);
+    multiset <int> s;
+    s.insert(10);
+    s.insert(20);
+    s.insert(10);
+    s.insert(20);
+    s.insert(50);
 
-    // for(auto i: s)
-    // {
-    //     cout<<i<<" ";
-    // }
+    for(auto i: s)
+    {
+        cout<<i<<" ";
+    }
     return 0;
 }
