@@ -8,7 +8,7 @@ using namespace std;
 
 int main()
 {
-    multiset <int> s;
+    set <int> s;
     s.insert(10);
     s.insert(20);
     s.insert(10);
