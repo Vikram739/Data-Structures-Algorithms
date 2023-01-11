@@ -1,13 +1,14 @@
+/*
+    Created By : Vikram Markali
+*/
 
-#include <iostream>
-#include <unordered_map>
+#include <bits/stdc++.h>
+#define print(x) cout<<x<<;
 using namespace std;
-  
-// Driver code
+
 int main()
 {
-
-  unordered_map<string, int> umap;
+    unordered_map<string, int> umap;
   
   // inserting values by using [] operator
   umap["Vikram"] = 10;
@@ -17,5 +18,6 @@ int main()
   // Traversing an unordered map
   for (auto x : umap)
     cout << x.first << " " << 
-            x.second << endl;
+  x.second << endl;
+    return 0;
 }
