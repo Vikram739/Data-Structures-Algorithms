@@ -1,6 +1,4 @@
 
-// C++ program to demonstrate 
-// functionality of unordered_map
 #include <iostream>
 #include <unordered_map>
 using namespace std;
@@ -16,9 +14,9 @@ int main()
   unordered_map<string, int> umap;
   
   // inserting values by using [] operator
-  umap["GeeksforGeeks"] = 10;
-  umap["Practice"] = 20;
-  umap["Contribute"] = 30;
+  umap["Vikram"] = 10;
+  umap["Omkar"] = 20;
+  umap["Rahul"] = 30;
   
   // Traversing an unordered map
   for (auto x : umap)
