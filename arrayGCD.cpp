@@ -16,7 +16,8 @@ void display(int mortal[],int n)
 }
 int main()
 {
-    int mortal = {10,20,30,40,50};
-    cout<<"Array: "<<display(mortal,5);
+    int mortal[] = {10,20,30,40,50};
+    cout<<"Array: ";
+    display(mortal,5);
     return 0;
 }
