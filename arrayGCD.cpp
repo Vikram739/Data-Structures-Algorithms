@@ -28,5 +28,6 @@ int main()
     int mortal[] = {10,20,30,40,50};
     cout<<"Array: ";
     display(mortal,5);
+    cout<<"GCD of Array: "<<arrayGCD(mortal,5);
     return 0;
 }
