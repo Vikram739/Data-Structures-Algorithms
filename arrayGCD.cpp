@@ -6,6 +6,10 @@
 #define print(x) cout<<x<<;
 using namespace std;
 
+int arrayGCD(int mortal[],int n)
+{
+    int gcd=0;
+}
 void display(int mortal[],int n)
 {
     for(int i=0;i<n;i++)
