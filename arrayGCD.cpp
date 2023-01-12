@@ -9,6 +9,11 @@ using namespace std;
 int arrayGCD(int mortal[],int n)
 {
     int gcd=0;
+    for(int i=0;i<n;i++)
+    {
+        gcd = __gcd(gcd,mortal[i]);
+    }
+    return gcd;
 }
 void display(int mortal[],int n)
 {
