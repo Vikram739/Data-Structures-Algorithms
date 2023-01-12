@@ -6,6 +6,7 @@
 #define print(x) cout<<x<<;
 using namespace std;
 
+// To find the GCD of an array...
 int arrayGCD(int mortal[],int n)
 {
     int gcd=0;
