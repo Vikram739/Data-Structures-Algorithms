@@ -9,7 +9,7 @@ using namespace std;
 
 // C++ program to find total bit in given number
 
-unsigned countBits(unsigned int number)
+unsigned countTotalBits(unsigned int number)
 {    
     
     // log function in base 2
@@ -20,6 +20,6 @@ unsigned countBits(unsigned int number)
 int main()
 {
     unsigned int num = 6;
-    std::cout<<countBits(num)<<'\n';
+    std::cout<<countTotalBits(num)<<'\n';
     return 0;
 }
