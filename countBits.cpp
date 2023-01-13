@@ -19,7 +19,7 @@ unsigned countTotalBits(unsigned int number)
 
 int main()
 {
-    unsigned int num = 6;
+    unsigned int num = 8;
     std::cout<<countTotalBits(num)<<'\n';
     return 0;
 }
