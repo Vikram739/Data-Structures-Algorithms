@@ -16,8 +16,7 @@ unsigned countBits(unsigned int number)
     // take only integer part
     return (int)log2(number)+1;
 }
-  
-// Driven program    
+
 int main()
 {
     unsigned int num = 65;
