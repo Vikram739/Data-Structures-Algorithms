@@ -8,6 +8,7 @@ using namespace std;
 
 int main()
 {
-    cout<<"HELLO";
+    int no = 10;
+    onesComplement(no);
     return 0;
 }
