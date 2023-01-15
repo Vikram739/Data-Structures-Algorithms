@@ -15,6 +15,7 @@ int onesComplement(int n)
         n = n / 2;
     }
     reverse(v.begin(), v.end());
+    
     // change 1's to 0 and 0's to 1
     for (int i = 0; i < v.size(); i++) {
         if (v[i] == 0)
