@@ -6,7 +6,7 @@
 #define print(x) cout<<x<<;
 using namespace std;
 
-void onesComplement(int n)
+int onesComplement(int n)
 {
     vector<int> v;
     // convert to binary representation
