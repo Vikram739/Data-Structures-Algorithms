@@ -33,7 +33,7 @@ int onesComplement(int n)
 }
 int main()
 {
-    int no = 50;
+    int no = 10;
     cout<<onesComplement(no);
     return 0;
 }
