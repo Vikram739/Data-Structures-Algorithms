@@ -33,6 +33,7 @@ int onesComplement(int n)
 }
 int main()
 {
+    // input integer... 
     int no = 10;
     cout<<onesComplement(no);
     return 0;
