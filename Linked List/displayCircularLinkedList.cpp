@@ -62,9 +62,9 @@ void displayCircularRecursive(struct Node *p)
 }
 int main()
 {
-    int A[] = {10,20,30,40,50};
+    int A[] = {10,20,30,40,50,60};
 
-    createList(A,5);
+    createList(A,6);
     displayCircular(first);
     cout<<"\nRecursive Circular Linked List: ";
     displayCircularRecursive(first);
