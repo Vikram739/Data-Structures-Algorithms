@@ -103,7 +103,7 @@ void deleteCircularList(Node *p,int pos)
     }
     else
     {
-        for(int i=0;i<pos-1;i++)
+        for(int i=0;i<pos-2;i++)
         {
             p = p->next;           
         }
@@ -133,8 +133,7 @@ int main()
     insertCircularList(first,3,35);
     displayCircular(first);
 
-    deleteCircularList(first,1);
+    deleteCircularList(first,4);
     displayCircular(first);
-    cout<<first;
     return 0;
 }
