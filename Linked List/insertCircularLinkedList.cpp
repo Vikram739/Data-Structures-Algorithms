@@ -38,9 +38,15 @@ void createList(int A[],int n)
 void insertCircularList(Node *p , int index, int x)
 {
     Node *t;
+    if(index<0 || index>Length(p))
+    {
+        cout<<"Invalid index...";
+        return;
+    }
     if(index == 0)
     {
-        t = (struct Node*)malloc(sizeof(struct Node));
+        // t = (struct Node*)malloc(sizeof(struct Node));
+        t = new Node;
         t->data = x;
         if(first == NULL)
         {
@@ -69,6 +75,16 @@ void insertCircularList(Node *p , int index, int x)
         t->next = p->next;
         p->next = t;
     }
+}
+
+int Length(struct Node *p)
+{
+    int len=0;
+    do{
+        p = p->next;
+        len++;
+    }while(p != first);
+    return len;
 }
 void displayCircular(struct Node *head)
 {
