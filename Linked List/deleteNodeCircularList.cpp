@@ -130,10 +130,10 @@ int main()
     createList(A,5);
     displayCircular(first);
 
-    insertCircularList(first,3,35);
+    insertCircularList(first,3,35);  // 3 means after third position...
     displayCircular(first);
 
-    deleteCircularList(first,6);
+    deleteCircularList(first,4);
     displayCircular(first);
     return 0;
 }
