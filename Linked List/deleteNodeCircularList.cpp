@@ -86,7 +86,30 @@ void insertCircularList(Node *p , int index, int x)
         p->next = t;
     }
 }
-
+void deleteCircularList(Node *p,int pos)
+{
+    if(pos <0 || pos>Length(p))
+    {
+        return;
+    }
+    if(pos == 1)
+    {
+        while(p->next != first)
+        {
+            p = p->next;
+        }
+        p->next = first->next;
+        first = p->next;
+    }
+    else
+    {
+        for(int i=0;i<pos-1;i++)
+        {
+            p = p->next;           
+        }
+        p->next = p->next->next;
+    }
+}
 void displayCircular(struct Node *head)
 {
     struct Node *p = head;
@@ -109,5 +132,7 @@ int main()
 
     insertCircularList(first,3,35);
     displayCircular(first);
+
+    deleteCircularList(first,1);
     return 0;
 }
