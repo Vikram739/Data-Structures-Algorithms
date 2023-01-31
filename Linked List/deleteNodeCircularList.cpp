@@ -135,5 +135,6 @@ int main()
 
     deleteCircularList(first,1);
     displayCircular(first);
+    cout<<first;
     return 0;
 }
