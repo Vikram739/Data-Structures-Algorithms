@@ -109,7 +109,22 @@ void deleteDoublyList(struct Node *p, int pos)
         }
     }
 }
+void reverseList(struct Node *p)
+{
+    struct Node *temp;
+    while(p != NULL)
+    {
+        temp = p->next;
+        p->next = p->prev;
+        p->prev = temp;
 
+        p = p->prev;
+        if(p != NULL && p->next == NULL)
+        {
+            first = p;
+        }
+    }
+}
 void displayList(struct Node *p)
 {
     cout<<"Doubly List: ";
@@ -133,5 +148,10 @@ int main()
 
     deleteDoublyList(first,4);
     displayList(first);
+
+    reverseList(first);
+    cout<<"\nReversed List: ";
+    displayList(first);
+
     return 0;
 }
