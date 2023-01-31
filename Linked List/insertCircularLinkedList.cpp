@@ -50,7 +50,7 @@ void insertCircularList(Node *p , int index, int x)
     Node *t;
     if(index<0 || index>Length(p))
     {
-        cout<<"Invalid index...";
+        cout<<"\nInvalid index...";
         return;
     }
     if(index == 0)
@@ -107,7 +107,7 @@ int main()
     createList(A,5);
     displayCircular(first);
 
-    insertCircularList(first,5,35);
+    insertCircularList(first,3,35);
     displayCircular(first);
     return 0;
 }
