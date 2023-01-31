@@ -11,7 +11,17 @@ struct Node
 {
     int data;
     struct Node *next;
-}*first;
+}*first=NULL;
+
+int Length(struct Node *p)
+{
+    int len=0;
+    do{
+        p = p->next;
+        len++;
+    }while(p != first);
+    return len;
+}
 
 void createList(int A[],int n)
 {
@@ -35,6 +45,71 @@ void createList(int A[],int n)
     last->next = first;
 }
 
+void insertCircularList(Node *p , int index, int x)
+{
+    Node *t;
+    if(index<0 || index>Length(p))
+    {
+        cout<<"\nInvalid index...";
+        return;
+    }
+    if(index == 0)
+    {
+        // t = (struct Node*)malloc(sizeof(struct Node));
+        t = new Node;
+        t->data = x;
+        if(first == NULL)
+        {
+            first = t;
+            first->next = first;
+        }
+        else
+        {
+            while(p->next != first)
+            {
+                p = p->next;
+            }
+            p->next = t;
+            t->next = first;
+            first = t;
+        }
+    }
+    else
+    {
+        for(int i=0;i<index-1;i++)
+        {
+            p = p->next;
+        }
+        t = new Node;
+        t->data = x;
+        t->next = p->next;
+        p->next = t;
+    }
+}
+void deleteCircularList(Node *p,int pos)
+{
+    if(pos <0 || pos>Length(p))
+    {
+        return;
+    }
+    if(pos == 1)
+    {
+        while(p->next != first)
+        {
+            p = p->next;
+        }
+        p->next = first->next;
+        first = p->next;
+    }
+    else
+    {
+        for(int i=1;i<pos-1;i++)
+        {
+            p = p->next;           
+        }
+        p->next = p->next->next;
+    }
+}
 void displayCircular(struct Node *head)
 {
     struct Node *p = head;
@@ -47,26 +122,18 @@ void displayCircular(struct Node *head)
     }while(p != head);
 }
 
-void displayCircularRecursive(struct Node *p)
-{
-    // struct Node *p = head;
-    static int flg = 0;
-    
-    if(p != first || flg == 0)
-    {
-        flg = 1;
-        cout<<p->data<<" ";
-        displayCircularRecursive(p->next);
-    }
-    flg=0;
-}
+
 int main()
 {
     int A[] = {10,20,30,40,50};
 
     createList(A,5);
     displayCircular(first);
-    cout<<"\nRecursive Circular Linked List: ";
-    displayCircularRecursive(first);
+
+    insertCircularList(first,3,35);  // 3 means after third position...
+    displayCircular(first);
+
+    deleteCircularList(first,4);
+    displayCircular(first);
     return 0;
 }
