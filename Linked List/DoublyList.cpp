@@ -33,6 +33,16 @@ void createList(int A[], int n)
         last = t;
     }
 }
+int Length(struct Node *p)
+{
+    int len = 0;
+    while(p != NULL)
+    {
+        len++;
+        p = p->next;
+    }
+    return len;
+}
 
 void displayList(struct Node *p)
 {
@@ -48,5 +58,6 @@ int main()
 
     createList(A,5);
     displayList(first);
+    cout<<"Lenth of List: "<<Length(first);
     return 0;
 }
