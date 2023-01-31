@@ -58,6 +58,6 @@ int main()
 
     createList(A,5);
     displayList(first);
-    cout<<"Lenth of List: "<<Length(first);
+    cout<<"\nLenth of List: "<<Length(first);
     return 0;
 }
