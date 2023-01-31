@@ -87,7 +87,7 @@ int main()
 {
     int A[] = {10,20,30,40,50};
 
-    createList(A,5);
+    // createList(A,5);
     displayCircular(first);
 
     insertCircularList(first,0,8);
