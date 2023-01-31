@@ -46,69 +46,7 @@ int Length(struct Node *p)
     return len;
 }
 
-void insertDoublyList(struct Node *p, int index, int x)
-{
-    struct Node *t;
-    if(index < 0 || index > Length(p))
-    {
-        return;
-    }
-    if(index == 0)
-    {
-        // t = (struct Node*)malloc(sizeof(struct Node));
-        t = new Node;
-        t->data = x;
-        t->prev = NULL;
-        t->next = first;
-        first->prev = t;
-        first = t;
-    }
-    else
-    {
-        for(int i=0;i<index-1;i++)
-        {
-            p = p->next;      
-        }
-        // t = (struct Node*)malloc(sizeof(struct Node));
-        t = new Node;
-        t->data = x;
-        t->prev = p;
-        t->next = p->next;
-        if(p->next)
-        {
-            p->next->prev = t;
-        }
-        p->next = t;
-    }
-}
 
-void deleteDoublyList(struct Node *p, int pos)
-{
-    if(pos < 1 || pos > Length(p))
-    {
-        return;
-    }
-    if(pos == 1)
-    {
-        first = first->next;
-        if(first)
-        {
-            first->prev = NULL;
-        }
-    }
-    else
-    {
-        for(int i=0;i<pos-1;i++)
-        {
-            p = p->next;
-        }
-        p->prev->next = p->next;
-        if(p->next)
-        {
-            p->next->prev = p->prev;
-        }
-    }
-}
 void reverseList(struct Node *p)
 {
     struct Node *temp;
@@ -142,12 +80,6 @@ int main()
     createList(A,5);
     displayList(first);
     // cout<<"\nLenth of List: "<<Length(first);
-
-    insertDoublyList(first,2,25);   // 2 means after 2...
-    displayList(first);
-
-    deleteDoublyList(first,4);
-    displayList(first);
 
     reverseList(first);
     cout<<"\nReversed List: ";
