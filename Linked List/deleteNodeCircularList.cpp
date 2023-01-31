@@ -134,5 +134,6 @@ int main()
     displayCircular(first);
 
     deleteCircularList(first,1);
+    displayCircular(first);
     return 0;
 }
