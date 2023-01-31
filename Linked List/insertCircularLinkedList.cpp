@@ -13,6 +13,16 @@ struct Node
     struct Node *next;
 }*first=NULL;
 
+int Length(struct Node *p)
+{
+    int len=0;
+    do{
+        p = p->next;
+        len++;
+    }while(p != first);
+    return len;
+}
+
 void createList(int A[],int n)
 {
     struct Node *t,*last;
@@ -77,15 +87,6 @@ void insertCircularList(Node *p , int index, int x)
     }
 }
 
-int Length(struct Node *p)
-{
-    int len=0;
-    do{
-        p = p->next;
-        len++;
-    }while(p != first);
-    return len;
-}
 void displayCircular(struct Node *head)
 {
     struct Node *p = head;
