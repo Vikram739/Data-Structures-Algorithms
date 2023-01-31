@@ -87,10 +87,10 @@ int main()
 {
     int A[] = {10,20,30,40,50};
 
-    // createList(A,5);
-    // displayCircular(first);
+    createList(A,5);
+    displayCircular(first);
 
-    insertCircularList(first,0,8);
+    insertCircularList(first,5,35);
     displayCircular(first);
     return 0;
 }
