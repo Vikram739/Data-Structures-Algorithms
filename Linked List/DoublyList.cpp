@@ -46,13 +46,48 @@ int Length(struct Node *p)
     return len;
 }
 
+void insertDoublyList(struct Node *p, int index, int x)
+{
+    struct Node *t;
+    if(index < 0 || index > Length(p))
+    {
+        return;
+    }
+    if(index == 0)
+    {
+        t = (struct Node*)malloc(sizeof(struct Node));
+        t->data = x;
+        t->prev = NULL;
+        t->next = first;
+        first->prev = t;
+        first = t;
+    }
+    else
+    {
+        for(int i=0;i<index-1;i++)
+        {
+            p = p->next;      
+        }
+        t = (struct Node*)malloc(sizeof(struct Node));
+        t->data = x;
+        t->prev = p;
+        t->next = p->next;
+        p->next = t;
+        if(p->next)
+        {
+            p->next->prev = t;
+        }
+    }
+}
 void displayList(struct Node *p)
 {
+    cout<<"Doubly List: ";
     while(p != NULL)
     {
         cout<<p->data<<" ";
         p = p->next;
     }
+    cout<<"\n";
 }
 int main()
 {
@@ -60,6 +95,9 @@ int main()
 
     createList(A,5);
     displayList(first);
-    cout<<"\nLenth of List: "<<Length(first);
+    // cout<<"\nLenth of List: "<<Length(first);
+
+    insertDoublyList(first,2,25);   // 2 means after 2...
+    displayList(first);
     return 0;
 }
