@@ -6,8 +6,93 @@
 #define print(x) cout<<x<<;
 using namespace std;
 
+struct Node
+{
+    struct Node *prev;
+    int data;
+    struct Node *next;
+}*first = NULL;
+
+void createList(int A[], int n)
+{
+    struct Node *t,*last;
+
+    // first = (struct Node*)malloc(sizeof(struct Node));
+    first = new Node;
+    first->data = A[0];
+    first->prev = NULL;
+    first->next = NULL;
+    last = first;
+
+    for(int i=1;i<n;i++)
+    {
+        // t = (struct Node *)malloc(sizeof(struct Node));
+        t = new Node;
+        t->data = A[i];
+        t->prev = last;
+        t->next = last->next;
+        last->next = t;
+        last = t;
+    }
+}
+int Length(struct Node *p)
+{
+    int len = 0;
+    while(p != NULL)
+    {
+        len++;
+        p = p->next;
+    }
+    return len;
+}
+
+void deleteDoublyList(struct Node *p, int pos)
+{
+    if(pos < 1 || pos > Length(p))
+    {
+        return;
+    }
+    if(pos == 1)
+    {
+        first = first->next;
+        if(first)
+        {
+            first->prev = NULL;
+        }
+    }
+    else
+    {
+        for(int i=0;i<pos-1;i++)
+        {
+            p = p->next;
+        }
+        p->prev->next = p->next;
+        if(p->next)
+        {
+            p->next->prev = p->prev;
+        }
+    }
+}
+
+void displayList(struct Node *p)
+{
+    cout<<"Doubly List: ";
+    while(p != NULL)
+    {
+        cout<<p->data<<" ";
+        p = p->next;
+    }
+    cout<<"\n";
+}
 int main()
 {
-    
+    int A[] = {10,20,30,40,50};
+
+    createList(A,5);
+    displayList(first);
+    // cout<<"\nLenth of List: "<<Length(first);
+
+    deleteDoublyList(first,4);
+    displayList(first);
     return 0;
 }
