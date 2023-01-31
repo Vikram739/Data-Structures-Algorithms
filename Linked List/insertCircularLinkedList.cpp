@@ -35,6 +35,41 @@ void createList(int A[],int n)
     last->next = first;
 }
 
+void insertCircularList(Node *p , int index, int x)
+{
+    Node *t;
+    if(index == 0)
+    {
+        t = (struct Node*)malloc(sizeof(struct Node));
+        t->data = x;
+        if(first == NULL)
+        {
+            first = t;
+            first->next = first;
+        }
+        else
+        {
+            while(p->next != first)
+            {
+                p = p->next;
+            }
+            p->next = t;
+            t->next = first;
+            first = t;
+        }
+    }
+    else
+    {
+        for(int i=0;i<index-1;i++)
+        {
+            p = p->next;
+        }
+        t = new Node;
+        t->data = x;
+        t->next = p->next;
+        p->next = t;
+    }
+}
 void displayCircular(struct Node *head)
 {
     struct Node *p = head;
@@ -47,26 +82,15 @@ void displayCircular(struct Node *head)
     }while(p != head);
 }
 
-void displayCircularRecursive(struct Node *p)
-{
-    // struct Node *p = head;
-    static int flg = 0;
-    
-    if(p != first || flg == 0)
-    {
-        flg = 1;
-        cout<<p->data<<" ";
-        displayCircularRecursive(p->next);
-    }
-    flg=0;
-}
+
 int main()
 {
     int A[] = {10,20,30,40,50};
 
     createList(A,5);
     displayCircular(first);
-    cout<<"\nRecursive Circular Linked List: ";
-    displayCircularRecursive(first);
+
+    insertCircularList(first,0,8);
+    displayCircular(first);
     return 0;
 }
