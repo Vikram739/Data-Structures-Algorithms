@@ -11,7 +11,7 @@ struct Node
 {
     int data;
     struct Node *next;
-}*first;
+}*first=NULL;
 
 void createList(int A[],int n)
 {
