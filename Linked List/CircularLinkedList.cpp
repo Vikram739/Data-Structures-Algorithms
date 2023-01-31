@@ -122,6 +122,19 @@ void displayCircular(struct Node *head)
     }while(p != head);
 }
 
+void displayCircularRecursive(struct Node *p)
+{
+    // struct Node *p = head;
+    static int flg = 0;
+    
+    if(p != first || flg == 0)
+    {
+        flg = 1;
+        cout<<p->data<<" ";
+        displayCircularRecursive(p->next);
+    }
+    flg=0;
+}
 
 int main()
 {
@@ -129,6 +142,8 @@ int main()
 
     createList(A,5);
     displayCircular(first);
+    cout<<"\nRecursive Circular Linked List: ";
+    displayCircularRecursive(first);
 
     insertCircularList(first,3,35);  // 3 means after third position...
     displayCircular(first);
