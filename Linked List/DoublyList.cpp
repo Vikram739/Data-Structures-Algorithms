@@ -150,7 +150,7 @@ int main()
     displayList(first);
 
     reverseList(first);
-    cout<<"\nReversed List: ";
+    cout<<"\nAfter Reversing...\n";
     displayList(first);
 
     return 0;
