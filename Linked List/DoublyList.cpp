@@ -135,6 +135,7 @@ void displayList(struct Node *p)
     }
     cout<<"\n";
 }
+
 int main()
 {
     int A[] = {10,20,30,40,50};
