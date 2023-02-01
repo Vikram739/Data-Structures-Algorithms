@@ -59,9 +59,9 @@ int findMiddle(struct Node *p)
 
 int main()
 {
-    int A[] = {10,20,30,40,50,60};
+    int A[] = {10,20,30,40,50};
 
-    createList(A,6);
+    createList(A,5);
     displayList(first);
 
     cout<<"\nMiddle of List: "<<findMiddle(first);
