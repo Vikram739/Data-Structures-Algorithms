@@ -88,6 +88,36 @@ void insertNode(struct Node *p,int pos,int x)
         p->next = t;    
     }
 }
+
+void deleteNode(struct Node *p,int pos)
+{
+    if(pos<1 || pos>Length(p))
+    {
+        return;
+    }
+    if(pos == 1)
+    {
+        if(first->next)
+        {
+            first->next->prev = first->prev;
+            first->prev->next = first->next;
+            first = first->next;
+        }
+        else
+        {
+            first = NULL;
+        }
+    }
+    else
+    {
+        for(int i=0;i<pos-2;i++)
+        {
+            p = p->next;
+        }
+        p->next->next->prev = p;
+        p->next = p->next->next;
+    }
+}
 void displayList(struct Node *p)
 {
     cout<<"Circular Doubly List: ";
@@ -107,7 +137,9 @@ int main()
 
     insertNode(first,3,35);
     displayList(first);
-    
-    
+
+    deleteNode(first,4);  // 4 means 4th node...starts from 1...
+    displayList(first);
+   
     return 0;
 }
