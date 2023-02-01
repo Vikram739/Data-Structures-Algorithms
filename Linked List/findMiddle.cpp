@@ -46,6 +46,16 @@ void displayList(struct Node *p)
     }
 }
 
+int findMiddle(struct Node *p)
+{
+    struct Node *fast=p,*slow = p;
+    while(fast && fast->next)
+    {
+        fast = fast->next->next;
+        slow = slow->next;
+    }
+    return slow->data;
+}
 
 int main()
 {
@@ -53,5 +63,7 @@ int main()
 
     createList(A,5);
     displayList(first);
+
+    cout<<"\nMiddle of List: "<<findMiddle(first);
     return 0;
 }
