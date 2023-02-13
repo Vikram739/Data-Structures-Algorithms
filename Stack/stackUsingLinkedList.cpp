@@ -48,6 +48,24 @@ int pop()
     return x;
 }
 
+int peek(int pos)
+{
+    struct Node *p;
+    if(top == NULL)
+    {
+        cout<<"\nStack is Empty!!";
+    }
+    else
+    {
+        p = top;
+        for(int i=0;p!=NULL && i<pos-1;i++)
+        {
+            p = p->next;
+        }
+        return p->data;
+    }
+}
+
 void Display(struct Node *p)
 {
     // struct Node *p;
@@ -75,8 +93,12 @@ int main()
     push(50);
 
     Display(top);
+    cout<<"Element at 2: "<<peek(2);
+    
     cout<<"\nPoped Element: "<<pop();
     cout<<"\nPoped Element: "<<pop();
     Display(top);
+
+    cout<<"Element at 2: "<<peek(2);
     return 0;
 }
