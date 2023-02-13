@@ -48,12 +48,35 @@ int pop()
     return x;
 }
 
-void Display()
+void Display(struct Node *p)
 {
-    
+    // struct Node *p;
+    if(top == NULL)
+    {
+        cout<<"\nStack is Empty!!";
+    }
+    else
+    {
+        cout<<"\nLinked List: ";
+        while(p != NULL)
+        {
+            cout<<p->data<<" ";
+            p = p->next;
+        }
+        cout<<endl;
+    }
 }
 int main()
 {
-    
+    push(10);
+    push(20);
+    push(30);
+    push(40);
+    push(50);
+
+    Display(top);
+    cout<<"\nPoped Element: "<<pop();
+    cout<<"\nPoped Element: "<<pop();
+    Display(top);
     return 0;
 }
