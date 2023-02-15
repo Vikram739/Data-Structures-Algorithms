@@ -8,7 +8,7 @@ using namespace std;
 
 struct Node
 {
-    int data;
+    char data;
     struct Node *next;
 }*top=NULL;
 
@@ -87,21 +87,35 @@ void Display(struct Node *p)
     }
 }
 
+bool isBalanced(char *exp)
+{
+    for(int i=0;i != '\0';i++)
+    {
+        if(exp[i] == '(')
+        {
+            push(exp[i]);
+        }
+        else if(exp[i] == ')')
+        {
+            if(top == NULL)
+            {
+                return false;
+            }
+            pop();
+        }
+    }
+    if(top == NULL)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
 int main()
 {
-    push(10);
-    push(20);
-    push(30);
-    push(40);
-    push(50);
-
-    Display(top);
-    cout<<"Element at 2: "<<peek(2);
-
-    cout<<"\nPoped Element: "<<pop();
-    cout<<"\nPoped Element: "<<pop();
-    Display(top);
-
-    cout<<"Element at 2: "<<peek(2);
+    char *exp = "((a+b)*(c-d)))";
+    cout<<"isBalanced: "<<isBalanced(exp);
     return 0;
 }
