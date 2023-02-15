@@ -12,10 +12,12 @@ struct Node
     struct Node *next;
 }*top=NULL;
 
+
 void push(int x)
 {
     struct Node *t;
-    t = (struct Node*)malloc(sizeof(struct Node));
+    // t = (struct Node*)malloc(sizeof(struct Node));
+    t = new Node;
     
     if(t == NULL)
     {
@@ -84,6 +86,7 @@ void Display(struct Node *p)
         cout<<endl;
     }
 }
+
 int main()
 {
     push(10);
@@ -94,7 +97,7 @@ int main()
 
     Display(top);
     cout<<"Element at 2: "<<peek(2);
-    
+
     cout<<"\nPoped Element: "<<pop();
     cout<<"\nPoped Element: "<<pop();
     Display(top);
