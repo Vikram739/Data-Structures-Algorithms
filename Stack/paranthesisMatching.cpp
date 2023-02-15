@@ -89,7 +89,7 @@ void Display(struct Node *p)
 
 bool isBalanced(char *exp)
 {
-    for(int i=0;i != '\0';i++)
+    for(int i=0;exp[i] != '\0';i++)
     {
         if(exp[i] == '(')
         {
@@ -115,7 +115,7 @@ bool isBalanced(char *exp)
 }
 int main()
 {
-    char *exp = "((a+b)*(c-d)))";
+    char *exp = "((a+b)*(c-d))";
     cout<<"isBalanced: "<<isBalanced(exp);
     return 0;
 }
