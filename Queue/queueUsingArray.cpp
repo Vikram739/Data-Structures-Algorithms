@@ -34,7 +34,22 @@ void enqueue(Queue *q, int x)
     }
 }
 
-void 
+void dqueue(struct Queue *q)
+{
+    if(q->front == q->rear)
+    {
+        cout<<"\nQueue is Empty!!!";
+    }
+    else
+    {
+        int x=-1;
+        q->front++;
+        x = q->Q[q->front];
+    }
+    return x;
+}
+
+
 int main()
 {
     struct Queue *q;
