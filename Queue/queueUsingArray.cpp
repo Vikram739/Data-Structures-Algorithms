@@ -34,21 +34,29 @@ void enqueue(Queue *q, int x)
     }
 }
 
-void dqueue(struct Queue *q)
+int dqueue(struct Queue *q)
 {
+    int x=-1;
     if(q->front == q->rear)
     {
         cout<<"\nQueue is Empty!!!";
     }
     else
     {
-        int x=-1;
         q->front++;
         x = q->Q[q->front];
     }
     return x;
 }
 
+void displayQueue(struct Queue *q)
+{
+    for(int i=q->front+1;i<=q->rear;i++)
+    {
+        cout<<q->Q[i]<<" ";
+    }
+    cout<<endl;
+}
 
 int main()
 {
@@ -58,7 +66,9 @@ int main()
     enqueue(q,10);
     enqueue(q,20);
     enqueue(q,30);
+    displayQueue(q);
+    cout<<"\nElement Deleted: "<<dqueue(q);
+    displayQueue(q);
 
-    dqueue(q);
     return 0;
 }
