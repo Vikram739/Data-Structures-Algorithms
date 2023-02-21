@@ -18,7 +18,8 @@ void createQueue(struct Queue *q, int size)
 {
     q->size = size;
     q->front = q->rear = -1;
-    q->Q = (int *)malloc(q->size*sizeof(int));
+    // q->Q = (int *)malloc(q->size*sizeof(int));
+    q->Q = new int[size];
 }
 void enqueue(Queue *q, int x)
 {
