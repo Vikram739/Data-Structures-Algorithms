@@ -34,6 +34,7 @@ void enqueue(Queue *q, int x)
     }
 }
 
+
 int dqueue(struct Queue *q)
 {
     int x=-1;
@@ -49,6 +50,7 @@ int dqueue(struct Queue *q)
     return x;
 }
 
+
 void displayQueue(struct Queue *q)
 {
     for(int i=q->front+1;i<=q->rear;i++)
@@ -58,17 +60,19 @@ void displayQueue(struct Queue *q)
     cout<<endl;
 }
 
+
 int main()
 {
-    struct Queue *q;
-    createQueue(q, 5);
+    struct Queue q;
+    createQueue(&q, 5);
 
-    enqueue(q,10);
-    enqueue(q,20);
-    enqueue(q,30);
-    displayQueue(q);
-    cout<<"\nElement Deleted: "<<dqueue(q);
-    displayQueue(q);
+    enqueue(&q,10);
+    enqueue(&q,20);
+    enqueue(&q,30);
+    displayQueue(&q);
+    cout<<"\nElement Deleted: "<<dqueue(&q)<<endl;
+    enqueue(&q,5);
+    displayQueue(&q);
 
     return 0;
 }
