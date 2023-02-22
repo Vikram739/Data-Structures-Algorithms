@@ -68,6 +68,7 @@ void Queue::displayQueue()
         cout<<Q[i]<<" ";
     }
 }
+
 int main()
 {
     Queue q(5);
