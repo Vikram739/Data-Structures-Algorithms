@@ -9,6 +9,7 @@ import java.util.Stack;
 import java.util.Set;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
+import java.util.TreeSet;
 
 class CollectionDemo
 {
@@ -74,7 +75,7 @@ class CollectionDemo
 
 
         // Set
-        Set<Integer> set = new LinkedHashSet<>();
+        Set<Integer> set = new TreeSet<>();
 
         set.add(10);
         set.add(20);
