@@ -75,7 +75,7 @@ class CollectionDemo
 
 
         // Set
-        Set<Integer> set = new TreeSet<>();
+        Set<Integer> set = new HashSet<>();
 
         set.add(10);
         set.add(20);
