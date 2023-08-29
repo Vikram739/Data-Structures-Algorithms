@@ -85,6 +85,34 @@ class CollectionDemo
         System.out.println("Set = "+set);
 
 
+        // HashSet
+        HashSet<Integer> hset = new HashSet<>();
+
+        hset.add(10);
+        hset.add(20);
+        hset.add(30);
+        hset.add(10);
+
+        System.out.println("HashSet = "+hset);
+        // hset.remove(Integer.valueOf(10));
+        // System.out.println("HashSet = "+hset);
+
+
+        // LinkedHashSet
+        LinkedHashSet<String> lset = new LinkedHashSet<>();
+
+        lset.add("Vikram");
+        lset.add("Kalpesh");
+        lset.add("Suraj");
+        lset.add("");
+        lset.add("");
+        lset.add("Rahul");
+        
+        System.out.println("LinkedHashSet = "+lset);
+
+
+
+
 
 
 
