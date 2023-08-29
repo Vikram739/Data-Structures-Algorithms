@@ -110,6 +110,17 @@ class CollectionDemo
         
         System.out.println("LinkedHashSet = "+lset);
 
+        // TreeSet
+        TreeSet<Integer> tset = new TreeSet<>();
+
+        tset.add(50);
+        tset.add(10);
+        tset.add(5);
+        tset.add(35);
+        tset.add(10);
+
+        System.out.println("TreeSet = "+tset);
+
 
 
 
