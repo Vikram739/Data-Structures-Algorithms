@@ -10,6 +10,7 @@ import java.util.Set;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.TreeSet;
+import java.util.Queue;
 
 class CollectionDemo
 {
@@ -121,6 +122,22 @@ class CollectionDemo
         tset.add(10);
 
         System.out.println("TreeSet = "+tset);
+
+
+        // Queue
+        Queue<Integer> q = new LinkedList<>();
+
+        q.add(20);
+        q.add(10);
+        q.offer(30);
+
+        System.out.println("Queue = "+q);
+        // q.poll();
+        // q.remove();
+        // System.out.println("Queue = "+q.peek());
+
+
+        
 
 
 
