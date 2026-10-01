@@ -24,6 +24,7 @@ DSA Practice
 |  |
 | ------- |
 | [0125-valid-palindrome](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0125-valid-palindrome) |
+| [0316-remove-duplicate-letters](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0316-remove-duplicate-letters) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -32,4 +33,13 @@ DSA Practice
 |  |
 | ------- |
 | [0055-jump-game](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0055-jump-game) |
+| [0316-remove-duplicate-letters](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0316-remove-duplicate-letters) |
+## Stack
+|  |
+| ------- |
+| [0316-remove-duplicate-letters](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0316-remove-duplicate-letters) |
+## Monotonic Stack
+|  |
+| ------- |
+| [0316-remove-duplicate-letters](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0316-remove-duplicate-letters) |
 <!---LeetCode Topics End-->
