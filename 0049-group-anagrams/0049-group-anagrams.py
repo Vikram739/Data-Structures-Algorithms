@@ -10,8 +10,8 @@ class Solution:
             if key in groups:
                 groups[key].append(s)
             else:
-                groups[key] = []
-                groups[key].append(s)
+                groups[key] = [s]
+                # groups[key].append(s)
             
         return list(groups.values())
         
