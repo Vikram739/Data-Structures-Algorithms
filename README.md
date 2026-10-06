@@ -7,11 +7,13 @@ DSA Practice
 | ------- |
 | [0001-two-sum](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0001-two-sum) |
 | [0055-jump-game](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0055-jump-game) |
+| [0217-contains-duplicate](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0238-product-of-array-except-self) |
 ## Hash Table
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0001-two-sum) |
+| [0217-contains-duplicate](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0217-contains-duplicate) |
 ## Prefix Sum
 |  |
 | ------- |
@@ -42,4 +44,8 @@ DSA Practice
 |  |
 | ------- |
 | [0316-remove-duplicate-letters](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0316-remove-duplicate-letters) |
+## Sorting
+|  |
+| ------- |
+| [0217-contains-duplicate](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0217-contains-duplicate) |
 <!---LeetCode Topics End-->
