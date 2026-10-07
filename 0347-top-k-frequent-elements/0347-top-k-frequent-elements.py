@@ -1,13 +1,18 @@
 class Solution:
     def topKFrequent(self, nums: list[int], k: int) -> list[int]:
-        dict = {}
+        freq = {}
         for num in nums:
-            if num in dict:
-                dict[num] += 1
+            if num in freq:
+                freq[num] += 1
             else:
-                dict[num] = 1
+                freq[num] = 1
         
-        sorted_pairs = sorted(dict.keys(), key=lambda num: dict[num], reverse=True)
+        heap = []
+        for key in freq.keys():
+            heapq.heappush(heap, (freq[key],key))
 
-        top_k = sorted_pairs[:k]
+            if len(heap) > k:
+                heapq.heappop(heap)
+        
+        top_k = [num for count, num in heap]
         return top_k
