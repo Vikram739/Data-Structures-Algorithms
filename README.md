@@ -11,6 +11,7 @@ DSA Practice
 | [0217-contains-duplicate](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0238-product-of-array-except-self) |
 | [0347-top-k-frequent-elements](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0347-top-k-frequent-elements) |
+| [0704-binary-search](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0704-binary-search) |
 ## Hash Table
 |  |
 | ------- |
@@ -84,4 +85,8 @@ DSA Practice
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0020-valid-parentheses) |
+## Binary Search
+|  |
+| ------- |
+| [0704-binary-search](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0704-binary-search) |
 <!---LeetCode Topics End-->
