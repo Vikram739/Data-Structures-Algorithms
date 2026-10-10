@@ -30,6 +30,7 @@ DSA Practice
 ## String
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0020-valid-parentheses) |
 | [0049-group-anagrams](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0049-group-anagrams) |
 | [0125-valid-palindrome](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0125-valid-palindrome) |
 | [0242-valid-anagram](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0242-valid-anagram) |
@@ -46,6 +47,7 @@ DSA Practice
 ## Stack
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0020-valid-parentheses) |
 | [0316-remove-duplicate-letters](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0316-remove-duplicate-letters) |
 ## Monotonic Stack
 |  |
@@ -78,4 +80,8 @@ DSA Practice
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0347-top-k-frequent-elements) |
+## Bracket Sequences
+|  |
+| ------- |
+| [0020-valid-parentheses](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0020-valid-parentheses) |
 <!---LeetCode Topics End-->
