@@ -1,11 +1,18 @@
 class Solution:
     def isValid(self, s: str) -> bool:
 
-        while '()' in s or '{}' in s or '[]' in s:
-            s = s.replace('()', '')
-            s = s.replace('{}', '')
-            s = s.replace('[]', '')
-        
-        return s == ''
+        stack = []
+        openClose = {')': '(', '}':'{',']':'['}
+
+        for c in s:
+            if c in openClose:
+                if stack and stack[-1] == openClose[c]:
+                    stack.pop()
+                else:
+                    return False
+            else:
+                stack.append(c)
+
+        return len(stack) == 0
 
         
