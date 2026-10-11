@@ -12,6 +12,7 @@ DSA Practice
 | [0238-product-of-array-except-self](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0238-product-of-array-except-self) |
 | [0347-top-k-frequent-elements](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0347-top-k-frequent-elements) |
 | [0704-binary-search](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0704-binary-search) |
+| [1299-replace-elements-with-greatest-element-on-right-side](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/1299-replace-elements-with-greatest-element-on-right-side) |
 ## Hash Table
 |  |
 | ------- |
