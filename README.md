@@ -38,6 +38,7 @@ DSA Practice
 | [0125-valid-palindrome](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0125-valid-palindrome) |
 | [0242-valid-anagram](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0242-valid-anagram) |
 | [0316-remove-duplicate-letters](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0316-remove-duplicate-letters) |
+| [2390-removing-stars-from-a-string](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/2390-removing-stars-from-a-string) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -52,6 +53,7 @@ DSA Practice
 | ------- |
 | [0020-valid-parentheses](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0020-valid-parentheses) |
 | [0316-remove-duplicate-letters](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0316-remove-duplicate-letters) |
+| [2390-removing-stars-from-a-string](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/2390-removing-stars-from-a-string) |
 ## Monotonic Stack
 |  |
 | ------- |
@@ -96,4 +98,8 @@ DSA Practice
 |  |
 | ------- |
 | [1913-maximum-product-difference-between-two-pairs](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/1913-maximum-product-difference-between-two-pairs) |
+## Simulation
+|  |
+| ------- |
+| [2390-removing-stars-from-a-string](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/2390-removing-stars-from-a-string) |
 <!---LeetCode Topics End-->
