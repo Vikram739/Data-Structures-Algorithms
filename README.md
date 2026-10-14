@@ -10,6 +10,7 @@ DSA Practice
 | [0055-jump-game](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0055-jump-game) |
 | [0217-contains-duplicate](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0238-product-of-array-except-self) |
+| [0283-move-zeroes](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0283-move-zeroes) |
 | [0347-top-k-frequent-elements](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0347-top-k-frequent-elements) |
 | [0704-binary-search](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0704-binary-search) |
 | [1299-replace-elements-with-greatest-element-on-right-side](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/1299-replace-elements-with-greatest-element-on-right-side) |
@@ -30,6 +31,7 @@ DSA Practice
 |  |
 | ------- |
 | [0125-valid-palindrome](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0125-valid-palindrome) |
+| [0283-move-zeroes](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0283-move-zeroes) |
 | [0344-reverse-string](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0344-reverse-string) |
 ## String
 |  |
