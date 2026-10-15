@@ -12,6 +12,7 @@ DSA Practice
 | [0238-product-of-array-except-self](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0238-product-of-array-except-self) |
 | [0283-move-zeroes](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0283-move-zeroes) |
 | [0347-top-k-frequent-elements](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0347-top-k-frequent-elements) |
+| [0692-top-k-frequent-words](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0692-top-k-frequent-words) |
 | [0704-binary-search](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0704-binary-search) |
 | [1299-replace-elements-with-greatest-element-on-right-side](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/1299-replace-elements-with-greatest-element-on-right-side) |
 | [1913-maximum-product-difference-between-two-pairs](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/1913-maximum-product-difference-between-two-pairs) |
@@ -23,6 +24,7 @@ DSA Practice
 | [0217-contains-duplicate](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0347-top-k-frequent-elements) |
+| [0692-top-k-frequent-words](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0692-top-k-frequent-words) |
 ## Prefix Sum
 |  |
 | ------- |
@@ -42,6 +44,7 @@ DSA Practice
 | [0242-valid-anagram](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0242-valid-anagram) |
 | [0316-remove-duplicate-letters](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0316-remove-duplicate-letters) |
 | [0344-reverse-string](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0344-reverse-string) |
+| [0692-top-k-frequent-words](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0692-top-k-frequent-words) |
 | [2390-removing-stars-from-a-string](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/2390-removing-stars-from-a-string) |
 ## Dynamic Programming
 |  |
@@ -69,6 +72,7 @@ DSA Practice
 | [0217-contains-duplicate](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0347-top-k-frequent-elements) |
+| [0692-top-k-frequent-words](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0692-top-k-frequent-words) |
 | [1913-maximum-product-difference-between-two-pairs](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/1913-maximum-product-difference-between-two-pairs) |
 ## Divide and Conquer
 |  |
@@ -78,14 +82,17 @@ DSA Practice
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0347-top-k-frequent-elements) |
+| [0692-top-k-frequent-words](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0692-top-k-frequent-words) |
 ## Bucket Sort
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0347-top-k-frequent-elements) |
+| [0692-top-k-frequent-words](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0692-top-k-frequent-words) |
 ## Counting
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0347-top-k-frequent-elements) |
+| [0692-top-k-frequent-words](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0692-top-k-frequent-words) |
 ## Quickselect
 |  |
 | ------- |
@@ -106,4 +113,8 @@ DSA Practice
 |  |
 | ------- |
 | [2390-removing-stars-from-a-string](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/2390-removing-stars-from-a-string) |
+## Trie
+|  |
+| ------- |
+| [0692-top-k-frequent-words](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0692-top-k-frequent-words) |
 <!---LeetCode Topics End-->
