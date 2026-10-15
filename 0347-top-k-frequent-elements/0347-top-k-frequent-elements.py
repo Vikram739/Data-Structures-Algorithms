@@ -7,14 +7,22 @@ class Solution:
 
 
 
+        
         freq = {}
         for num in nums:
             if num in freq:
                 freq[num] += 1
             else:
                 freq[num] = 1
-        
-        sortedRes = sorted(freq.keys(), key = lambda x : freq[x], reverse=True)
-        topK = sortedRes[:k]
+                
+        heap = []
+        for key in freq.keys():
+            heapq.heappush(heap, (freq[key], key))
 
-        return topK
+            if len(heap) > k:
+                heapq.heappop(heap)
+            
+
+        topk = [num for count, num in heap]
+
+        return topk
