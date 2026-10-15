@@ -6,6 +6,7 @@ DSA Practice
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0001-two-sum) |
+| [0036-valid-sudoku](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0036-valid-sudoku) |
 | [0049-group-anagrams](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0049-group-anagrams) |
 | [0055-jump-game](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0055-jump-game) |
 | [0217-contains-duplicate](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0217-contains-duplicate) |
@@ -20,6 +21,7 @@ DSA Practice
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0001-two-sum) |
+| [0036-valid-sudoku](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0036-valid-sudoku) |
 | [0049-group-anagrams](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0049-group-anagrams) |
 | [0217-contains-duplicate](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0242-valid-anagram) |
@@ -117,4 +119,8 @@ DSA Practice
 |  |
 | ------- |
 | [0692-top-k-frequent-words](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0692-top-k-frequent-words) |
+## Matrix
+|  |
+| ------- |
+| [0036-valid-sudoku](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0036-valid-sudoku) |
 <!---LeetCode Topics End-->
