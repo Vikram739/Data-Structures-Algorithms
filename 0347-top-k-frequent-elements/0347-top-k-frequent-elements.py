@@ -1,5 +1,12 @@
 class Solution:
     def topKFrequent(self, nums: list[int], k: int) -> list[int]:
+        # using bucket sort...
+
+
+
+
+
+
         freq = {}
         for num in nums:
             if num in freq:
@@ -7,12 +14,7 @@ class Solution:
             else:
                 freq[num] = 1
         
-        heap = []
-        for key in freq.keys():
-            heapq.heappush(heap, (freq[key],key))
+        sortedRes = sorted(freq.keys(), key = lambda x : freq[x], reverse=True)
+        topK = sortedRes[:k]
 
-            if len(heap) > k:
-                heapq.heappop(heap)
-        
-        top_k = [num for count, num in heap]
-        return top_k
+        return topK
