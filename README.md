@@ -63,6 +63,7 @@ DSA Practice
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0020-valid-parentheses) |
+| [0155-min-stack](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0155-min-stack) |
 | [0316-remove-duplicate-letters](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0316-remove-duplicate-letters) |
 | [2390-removing-stars-from-a-string](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/2390-removing-stars-from-a-string) |
 ## Monotonic Stack
@@ -129,4 +130,8 @@ DSA Practice
 |  |
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0128-longest-consecutive-sequence) |
+## Design
+|  |
+| ------- |
+| [0155-min-stack](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0155-min-stack) |
 <!---LeetCode Topics End-->
