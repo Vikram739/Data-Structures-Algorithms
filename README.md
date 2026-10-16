@@ -9,6 +9,7 @@ DSA Practice
 | [0036-valid-sudoku](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0036-valid-sudoku) |
 | [0049-group-anagrams](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0049-group-anagrams) |
 | [0055-jump-game](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0055-jump-game) |
+| [0128-longest-consecutive-sequence](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0128-longest-consecutive-sequence) |
 | [0217-contains-duplicate](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0238-product-of-array-except-self) |
 | [0283-move-zeroes](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0283-move-zeroes) |
@@ -23,6 +24,7 @@ DSA Practice
 | [0001-two-sum](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0001-two-sum) |
 | [0036-valid-sudoku](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0036-valid-sudoku) |
 | [0049-group-anagrams](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0049-group-anagrams) |
+| [0128-longest-consecutive-sequence](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0128-longest-consecutive-sequence) |
 | [0217-contains-duplicate](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0347-top-k-frequent-elements) |
@@ -123,4 +125,8 @@ DSA Practice
 |  |
 | ------- |
 | [0036-valid-sudoku](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0036-valid-sudoku) |
+## Union-Find
+|  |
+| ------- |
+| [0128-longest-consecutive-sequence](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0128-longest-consecutive-sequence) |
 <!---LeetCode Topics End-->
