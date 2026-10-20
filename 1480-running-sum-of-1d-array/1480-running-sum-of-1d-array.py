@@ -2,16 +2,14 @@ class Solution:
     def runningSum(self, nums: list[int]) -> list[int]:
         n = len(nums)
         ans = []
+        Preffsum = 0
         for i in range(n):
-            j = 0
-            sum = 0
-            while j <= i:
-                sum += nums[j]
-                j += 1
-            ans.append(sum)
-
-
+            Preffsum += nums[i]
+            ans.append(Preffsum)
+        
         return ans
+        
+
             
 
         
