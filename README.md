@@ -17,6 +17,7 @@ DSA Practice
 | [0692-top-k-frequent-words](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0692-top-k-frequent-words) |
 | [0704-binary-search](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0704-binary-search) |
 | [1299-replace-elements-with-greatest-element-on-right-side](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/1299-replace-elements-with-greatest-element-on-right-side) |
+| [1480-running-sum-of-1d-array](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/1480-running-sum-of-1d-array) |
 | [1913-maximum-product-difference-between-two-pairs](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/1913-maximum-product-difference-between-two-pairs) |
 ## Hash Table
 |  |
@@ -33,6 +34,7 @@ DSA Practice
 |  |
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0238-product-of-array-except-self) |
+| [1480-running-sum-of-1d-array](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/1480-running-sum-of-1d-array) |
 ## Two Pointers
 |  |
 | ------- |
