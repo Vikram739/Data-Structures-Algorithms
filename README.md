@@ -9,6 +9,7 @@ DSA Practice
 | [0036-valid-sudoku](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0036-valid-sudoku) |
 | [0049-group-anagrams](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0049-group-anagrams) |
 | [0055-jump-game](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0055-jump-game) |
+| [0075-sort-colors](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0075-sort-colors) |
 | [0128-longest-consecutive-sequence](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0128-longest-consecutive-sequence) |
 | [0217-contains-duplicate](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0238-product-of-array-except-self) |
@@ -38,6 +39,7 @@ DSA Practice
 ## Two Pointers
 |  |
 | ------- |
+| [0075-sort-colors](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0075-sort-colors) |
 | [0125-valid-palindrome](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0125-valid-palindrome) |
 | [0283-move-zeroes](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0283-move-zeroes) |
 | [0344-reverse-string](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0344-reverse-string) |
@@ -76,6 +78,7 @@ DSA Practice
 |  |
 | ------- |
 | [0049-group-anagrams](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0049-group-anagrams) |
+| [0075-sort-colors](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0075-sort-colors) |
 | [0217-contains-duplicate](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0347-top-k-frequent-elements) |
@@ -115,6 +118,7 @@ DSA Practice
 ## Quicksort
 |  |
 | ------- |
+| [0075-sort-colors](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0075-sort-colors) |
 | [1913-maximum-product-difference-between-two-pairs](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/1913-maximum-product-difference-between-two-pairs) |
 ## Simulation
 |  |
@@ -136,4 +140,8 @@ DSA Practice
 |  |
 | ------- |
 | [0155-min-stack](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0155-min-stack) |
+## Bubble Sort
+|  |
+| ------- |
+| [0075-sort-colors](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0075-sort-colors) |
 <!---LeetCode Topics End-->
