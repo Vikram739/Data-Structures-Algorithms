@@ -11,6 +11,7 @@ DSA Practice
 | [0055-jump-game](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0055-jump-game) |
 | [0075-sort-colors](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0075-sort-colors) |
 | [0128-longest-consecutive-sequence](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0128-longest-consecutive-sequence) |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0217-contains-duplicate](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0238-product-of-array-except-self) |
 | [0283-move-zeroes](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0283-move-zeroes) |
@@ -41,6 +42,7 @@ DSA Practice
 | ------- |
 | [0075-sort-colors](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0075-sort-colors) |
 | [0125-valid-palindrome](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0125-valid-palindrome) |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0283-move-zeroes](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0283-move-zeroes) |
 | [0344-reverse-string](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0344-reverse-string) |
 ## String
@@ -114,6 +116,7 @@ DSA Practice
 ## Binary Search
 |  |
 | ------- |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0704-binary-search](https://github.com/Vikram739/Data-Structures-Algorithms/tree/master/0704-binary-search) |
 ## Quicksort
 |  |
