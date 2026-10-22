@@ -7,7 +7,7 @@ class Solution:
         left =  mid = 0
         right = len(nums)-1
 
-        while left < right and mid <= right:
+        while mid <= right:
             if nums[mid] == 0:
                 nums[left], nums[mid] = nums[mid], nums[left]
                 left += 1
