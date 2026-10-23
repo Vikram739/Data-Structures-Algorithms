@@ -22,20 +22,17 @@ class Solution:
 
         # binary search
         n = len(numbers)
-
         for i in range(n):
-            need = target - numbers[i]
-            left = i + 1
-            right = n - 1
+            l = i+1
+            r = n -1
+            res = target - numbers[i]
+            while l <= r:
+                mid = l + (r-l) // 2
 
-            while left <= right:
-                mid = (left + right) // 2
-                if numbers[mid] == need:
-                    return [i + 1, mid + 1]
-                elif numbers[mid] < need:
-                    left = mid + 1
+                if numbers[mid] == res:
+                    return [i+1,mid+1]
+                elif numbers[mid] < res:
+                    l = mid + 1
                 else:
-                    right = mid - 1
-
-        return []
+                    r = mid - 1
 
