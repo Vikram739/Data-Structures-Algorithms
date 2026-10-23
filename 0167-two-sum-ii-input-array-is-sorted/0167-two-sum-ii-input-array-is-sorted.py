@@ -1,18 +1,19 @@
 class Solution:
-    def twoSum(self, nums: list[int], target: int) -> list[int]:
-        n = len(nums)
-        l = 0
-        r = n-1
-        while l < r:
-            
-            currSum = nums[l] + nums[r]
+    def twoSum(self, numbers, target):
 
-            if currSum > target:
-                r -= 1
-            elif currSum < target:
-                l += 1
+        start = 0
+        end = len(numbers) - 1
+
+        while start < end:
+
+            total = numbers[start] + numbers[end]
+
+            if total == target:
+                return [start + 1, end + 1]
+
+            elif total < target:
+                start += 1
             else:
-                return [l+1, r+1]
+                end -= 1
 
-            
-        
+        return [-1, -1]
